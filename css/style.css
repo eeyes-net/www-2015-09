@@ -1,0 +1,368 @@
+/* global.css */
+/* reset部分样式 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+    color: #2e322c;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+h2, h3, h4 > a, h5 {
+    font-weight: normal;
+    color: #03518a;
+}
+h2 {
+    font-size: 38px;
+    line-height: 38px;
+}
+h3 {
+    font-size: 30px;
+    font-style: italic;
+    line-height: 40px;
+    background-color: #f5f6e3; /* 用于和hr线配合使用 */
+    padding-right: 10px;
+}
+h4 > a {
+    font-size: 22px;
+    line-height: 40px;
+}
+h5 {
+    font-size: 16px;
+    line-height: 30px;
+}
+hr {
+    position: relative;
+    margin: 20px 50px;
+    height: 1px;
+    border-width: 0;
+    color: #959595;
+    background-color: #959595;
+}
+body, section, nav, header {
+    background-color: #f5f6e3;
+}
+body {
+    overflow-x: hidden; /* 取消屏幕下方水平滚动条 */
+}
+p {
+    line-height: 2;
+}
+/* 全局公用类 */
+.e-fl {
+    float: left;
+}
+/* 浮动 */
+.e-cl {
+    clear: both;
+}
+/* 清除浮动 */
+.e-of {
+    overflow: hidden;
+}
+.e-wrapper { /* 块居中 */
+    width: 1280px;
+    margin: 0 auto;
+}
+.e-bgw {
+    background-color: #f5f6e3;
+}
+/* 专门用来处理导航栏最左侧logo的圆角 */
+.e-tc {
+    text-align: center;
+}
+/* 文本居中 */
+.e-sh {
+    color: #2e322c;
+}
+/* 专门用于修改二级标题中默认字体颜色为#2e322c */
+.e-3-1 {
+    width: 33.3%;
+    box-sizing: border-box;
+    float: left;
+}
+.e-2-1 {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+.e-big-line { /* 用于大标题的上下划线 */
+    width: 450px;
+    display: inline-block;
+}
+.e-big-line-top { /* 微调线的位置 */
+    top: 7px;
+}
+/* nav.css */
+/* 导航栏部分样式 */
+.e-nav {
+    margin-top: 28px;
+    height: 48px;
+    background-color: #0087b4;
+}
+.e-nav-left {
+    position: relative;
+    top: -16px;
+    height: 77px;
+    width: 146px;
+    border-radius: 0 5px 5px 0;
+    background-color: #0087b4;
+}
+.e-nav-bg {
+    position: absolute;
+    background-color: #0087b4;
+    right: 142px;
+    height: 77px;
+    padding-left: 1000em;
+}
+.e-nav-title {
+    display: inline-block;
+    width: 198px;
+    height: 47px;
+    background: url(../images/sprite.png) 0 -92px no-repeat;
+}
+.e-nav-logo {
+    width: 60px;
+    height: 77px;
+    margin-left: 71px;
+    background: url(../images/sprite.png) -80px 0 no-repeat;
+}
+.e-nav-right {
+    height: 48px;
+    background-color: #f5f6e3;
+}
+.e-nav-list {
+    height: 48px;
+    border-radius: 5px 0 0 5px;
+    background-color: #0087b4;
+}
+.e-nav-list li {
+    float: left;
+}
+.e-nav-list a {
+    display: inline-block;
+    width: 130px;
+    height: 48px;
+    font-size: 18px;
+    color: #eaeaea;
+    line-height: 48px;
+    text-align: center;
+    transition: .5s all;
+}
+.e-nav-list a:hover {
+    background-color: #156d8b;
+}
+/* slider.css */
+#e-slider-content {
+    width: 1280px;
+    height: 238px;
+}
+/* news.css */
+/* 小瞳新闻和大屏幕部分样式 */
+.e-news-icon {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+}
+.e-news-icon-news {
+    background: url(../images/sprite.png) 0 -52px no-repeat;
+}
+.e-news-icon-piao {
+    background: url(../images/sprite.png) -40px -52px no-repeat;
+}
+.e-piao-wrapper {
+    padding: 22px 0 0 26px;
+}
+.e-piao-wrapper > a > img:hover {
+    opacity: 0.8;
+}
+.e-piao-info > p {
+    font-size: 13px;
+}
+.e-piao-wrapper > a > img {
+    width: 102px;
+    border: none;
+    transition: all .5s;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.e-piao-wrapper > a {
+    display: inline-block;
+    width: 102px;
+    height: 144px;
+    background-color: #03518a;
+}
+.e-piao-info {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 25px;
+}
+.e-piao-info > h4 > a:hover {
+    opacity: 0.6;
+}
+.e-piao-btn {
+    display: inline-block;
+    height: 29px;
+    width: 99px;
+    margin-top: 15px;
+
+    line-height: 29px;
+    text-align: center;
+    color: #03518a;
+
+    border-radius: 5px;
+    border: 1px solid #03518a;
+
+    transition: .5s all;
+}
+.e-piao-btn:hover {
+    background-color: #03518a;
+    color: #f5f6e3;;
+}
+.e-news-list {
+    padding: 18px 0 0 63px;
+}
+.e-news-list > li {
+    list-style-type: circle;
+    font-size: 16px;
+    line-height: 2;
+}
+.e-news-list > li > a:hover {
+    color: #03518a;
+}
+.e-news-line {
+    top: 20px;
+}
+/* intro.css */
+/* 社团介绍部分样式 */
+.e-intro {
+    min-width: 1280px;
+}
+.e-intro-title {
+    margin-top: 59px;
+}
+.e-intro-photo {
+    padding: 33px 0 2em 19px;
+    position: relative;
+    z-index: 9;
+}
+.e-intro-text {
+    margin-top: 26px;
+    padding-right: 7em;
+    position: relative;
+    font-size: 14px;
+}
+.e-intro-black {
+    position: relative; /* 这里没有像导航栏最左侧一样用absolute处理是为了方便下面元素的定位，但是就需要给外围元素处理溢出 */
+    left: 0;
+
+    width: 100%;
+    height: 158px;
+    margin-left: -1000em;
+    padding: 0 100em 0 1000em;
+
+    background-color: #313131;
+}
+.e-intro-black p.e-intro-black-inner {
+    text-indent: 0;
+    color: #f5f6e3;
+}
+.e-intro-text p {
+    text-indent: 2em;
+}
+.e-intro-flag {
+    position: absolute;
+    right: 97em;
+    bottom: 2em;
+}
+.e-intro-div {
+    padding: 0 25px;
+}
+.e-intro-div p {
+    font-size: 15px;
+    text-align: left;
+}
+.e-intro-div-title {
+    margin-top: 44px;
+}
+/* join.css */
+/* 加入我们部分样式 */
+.e-join-title {
+    margin-top: 50px;
+}
+.e-join-left {
+    padding: 38px 50px 0 88px;
+}
+.e-join-left > p {
+    float: left;
+    width: 400px;
+    margin-top: 18px;
+}
+.e-join-right {
+    padding: 48px 0 0 62px;
+}
+.e-join-1, .e-join-2 {
+    width: 50px;
+    height: 61px;
+    margin-right: 20px;
+}
+.e-join-link {
+    color: blue;
+    text-decoration: underline;
+}
+.e-join-1 {
+    background: url(../images/sprite.png) 0 -152px no-repeat;
+}
+.e-join-2 {
+    background: url(../images/sprite.png) -50px -152px no-repeat;
+    margin-top: 35px;
+}
+.e-join-logo {
+    width: 198px;
+    height: 59px;
+    margin: 40px 0 0 54px;
+    background: url(../images/sprite.png) 0 -92px no-repeat;
+}
+.e-join-code {
+
+}
+/* footer.css */
+/* footer部分样式 */
+.e-footer {
+    position: relative;
+    height: 155px;
+    margin-top: 64px;
+    background-color: #313131;
+}
+.e-footer-logo {
+    position: absolute;
+    left: 60px;
+    width: 58px;
+    height: 88px;
+    background: url(../images/sprite.png) -140px 0 no-repeat;
+}
+.e-footer-list {
+    padding-top: 34px;
+}
+.e-footer-list > li {
+    display: inline-block;
+}
+.e-footer-list > li > a {
+    padding: 0 14px;
+    color: #626262;
+}
+.e-icp, .e-copyright {
+    color: #626262;
+    line-height: 1;
+}
+.e-copyright {
+    padding-top: 26px;
+}
+.e-icp {
+    padding-top: 15px;
+}
