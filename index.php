@@ -234,9 +234,6 @@
             <div class="e-cl"></div>
         </div>
     </section>
-    <script src="./v20151125/js/jquery.min.js"></script>
-    <script src="./v20151125/js/jquery.fullScreenSlider.min.js"></script>
-    <script src="./v20151125/js/main.js"></script>
     <script type="text/javascript">
         window.onload = function () {
             window.console && window.console.info && window.console.info("         __   __                     _   \n  ___  __\\ \\ / /__  ___   _ __   ___| |_ \n / _ \\/ _ \\ V / _ \\/ __| | '_ \\ / _ \\ __|\n|  __/  __/| |  __/\\__ \\_| | | |  __/ |_ \n \\___|\\___||_|\\___||___(_)_| |_|\\___|\\__|\n想加入e瞳网？请发送邮件到 lilei_mail@foxmail.com")
