@@ -61,7 +61,7 @@
         'username' => 'test',
         'password' => 'test',
         'charset' => 'utf8',
-        'table_name' => 'test_news' // 这里直接使用了完整表名，前缀是v9_，表名是news
+        'table_name' => 'test_news'
     );
     // 大屏幕数据库配置
     $ticDbInfo = array(
@@ -118,7 +118,7 @@
         </div>
     </section>
     <!-- 小瞳新闻、大屏幕结束 -->
-    <section class="e-intro e-of"> <!-- 采用了足够大的padding处理黑色背景块，需要处理溢出以防止滚动条出现 -->
+    <section class="e-intro e-of"><!-- 采用了足够大的padding处理黑色背景块，需要处理溢出以防止滚动条出现 -->
         <header class="e-intro-title e-tc">
             <hr class="e-big-line e-big-line-top"/>
             <h2>熟悉<span class="e-sh">我们的团队</span>，了解<span class="e-sh">我们的文化</span></h2>
@@ -235,14 +235,11 @@
         </div>
     </section>
     <script type="text/javascript">
-        window.onload = function () {
-            window.console && window.console.info && window.console.info("         __   __                     _   \n  ___  __\\ \\ / /__  ___   _ __   ___| |_ \n / _ \\/ _ \\ V / _ \\/ __| | '_ \\ / _ \\ __|\n|  __/  __/| |  __/\\__ \\_| | | |  __/ |_ \n \\___|\\___||_|\\___||___(_)_| |_|\\___|\\__|\n想加入e瞳网？请发送邮件到 lilei_mail@foxmail.com")
-        }
+        console && console.info && console.info("         __   __                     _   \n  ___  __\\ \\ / /__  ___   _ __   ___| |_ \n / _ \\/ _ \\ V / _ \\/ __| | '_ \\ / _ \\ __|\n|  __/  __/| |  __/\\__ \\_| | | |  __/ |_ \n \\___|\\___||_|\\___||___(_)_| |_|\\___|\\__|\n想加入e瞳网？请发送邮件到 lilei_mail@foxmail.com");
     </script>
-    <script type="text/javascript">
-        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-        document.write(unescape("%3Cspan id='cnzz_stat_icon_1256846918'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256846918%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <a class="threesixzero" href="http://webscan.360.cn/index/checkwebsite/url/eeyes.net"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/24834e201aeca4964d639c7783478a7c"/></a>
+    <div style="display:none">
+        <script src="//s11.cnzz.com/z_stat.php?id=1256846918" type="text/javascript"></script>
+        <a class="threesixzero" href="http://webscan.360.cn/index/checkwebsite/url/eeyes.net"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/24834e201aeca4964d639c7783478a7c"/></a>
+    </div>
 </body>
 </html>
